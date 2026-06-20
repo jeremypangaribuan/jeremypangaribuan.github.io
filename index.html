@@ -1,55 +1,206 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <title>My Portfolio</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      max-width: 850px;
-      margin: 40px auto;
-      padding: 0 20px;
-      line-height: 1.6;
-    }
-    h1 {
-      margin-bottom: 5px;
-    }
-    .subtitle {
-      color: #555;
-      margin-top: 0;
-    }
-    section {
-      margin-top: 30px;
-    }
-  </style>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Jeremy Pangaribuan | Software Engineering, AI & Digital Logic Portfolio</title>
+  <meta name="description" content="Portfolio for Jeremy Pangaribuan: computer science student projects in Python, AI/OCR, GitHub Actions, web development, data processing, and VHDL digital logic." />
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <h1>Your Name</h1>
-  <p class="subtitle">Software Developer | AI/ML | DevSecOps | Data Modernization</p>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header" aria-label="Main navigation">
+    <nav class="nav container">
+      <a class="brand" href="#top" aria-label="Jeremy Pangaribuan home">
+        <img src="assets/jeremy-logo.svg" alt="JP monogram" />
+        <span>Jeremy Pangaribuan</span>
+      </a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-links">Menu</button>
+      <div class="nav-links" id="nav-links">
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#fit">Role Fit</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </nav>
+  </header>
 
-  <section>
-    <h2>About Me</h2>
-    <p>
-      Welcome to my portfolio. I specialize in software development,
-      AI/ML, secure software delivery, and enterprise technology modernization.
-    </p>
-  </section>
+  <main id="main">
+    <section id="top" class="hero section">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow">Computer Science Student • Internship Ready</p>
+          <h1>Building practical software, AI/OCR prototypes, data tools, and digital logic systems.</h1>
+          <p class="lead">I am developing a foundation in Python, JavaScript, Git/GitHub, AI-assisted workflows, data processing, and VHDL hardware design. My work focuses on learning quickly, documenting clearly, and turning class projects into useful portfolio artifacts.</p>
+          <div class="hero-actions">
+            <a class="button primary" href="#projects">View projects</a>
+            <a class="button secondary" href="mailto:zoomf7ash@gmail.com?subject=Jeremy%20Pangaribuan%20Internship%20Opportunity">Email me</a>
+          </div>
+        </div>
+        <aside class="hero-card" aria-label="Portfolio highlights">
+          <div class="status-pill">Open to internships</div>
+          <dl class="metrics">
+            <div><dt>136</dt><dd>Python files reviewed</dd></div>
+            <div><dt>16</dt><dd>VHDL design files</dd></div>
+            <div><dt>6</dt><dd>Vivado project folders</dd></div>
+            <div><dt>9</dt><dd>Public GitHub repos</dd></div>
+          </dl>
+          <p>Project evidence spans 2025-2026 coursework, OCR experiments, GitHub Pages, GitHub Actions practice, and FPGA/digital logic labs.</p>
+        </aside>
+      </div>
+    </section>
 
-  <section>
-    <h2>Projects</h2>
-    <ul>
-      <li>Board Asset Scan using AI-assisted analysis</li>
-      <li>DevSecOps automation and vulnerability management</li>
-      <li>AI/ML research and engineering projects</li>
-    </ul>
-  </section>
+    <section class="section intro-strip">
+      <div class="container strip-grid">
+        <div>
+          <h2>What I am looking for</h2>
+          <p>Software engineering, applied AI, data/product analytics, developer documentation, technical operations, and startup growth internships where curiosity, ownership, communication, and fast learning matter.</p>
+        </div>
+        <div class="chip-cloud" aria-label="Target role keywords">
+          <span>Python</span><span>JavaScript</span><span>HTML/CSS</span><span>GitHub</span><span>AI Tools</span><span>OCR</span><span>JSON</span><span>VHDL</span><span>Vivado</span><span>Documentation</span><span>Data cleanup</span><span>Product thinking</span>
+        </div>
+      </div>
+    </section>
 
-  <section>
-    <h2>Contact</h2>
-    <p>Email: your-email@example.com</p>
-    <p>GitHub: github.com/yourusername</p>
-    <p>LinkedIn: linkedin.com/in/yourprofile</p>
-  </section>
+    <section id="projects" class="section">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">Selected work</p>
+          <h2>Projects that show programming, data, AI, and hardware fundamentals</h2>
+          <p>Use the filters to see projects by internship track.</p>
+        </div>
+
+        <div class="filters" aria-label="Project filters">
+          <button class="filter active" data-filter="all">All</button>
+          <button class="filter" data-filter="software">Software</button>
+          <button class="filter" data-filter="ai">AI/OCR</button>
+          <button class="filter" data-filter="data">Data</button>
+          <button class="filter" data-filter="hardware">Hardware</button>
+          <button class="filter" data-filter="content">Content</button>
+        </div>
+
+        <div class="project-grid">
+          <article class="project-card" data-tags="ai software data">
+            <div class="card-top"><span class="project-type">AI / OCR</span><a href="https://github.com/jeremypangaribuan/paddleocrtest" target="_blank" rel="noreferrer">GitHub</a></div>
+            <h3>OCR document extraction prototype</h3>
+            <p>Built a Python prototype that extracts images from PDFs and runs OCR using PaddleOCR, PyMuPDF, OpenCV, NumPy, and visualization tools. This connects well with AI-assisted document review, workflow automation, and data extraction internships.</p>
+            <ul>
+              <li>PDF image extraction and OCR pipeline thinking</li>
+              <li>AI model/tool testing and debugging practice</li>
+              <li>Strong match for document processing and business workflow roles</li>
+            </ul>
+          </article>
+
+          <article class="project-card" data-tags="software data">
+            <div class="card-top"><span class="project-type">Python / OOP</span><span>Coursework</span></div>
+            <h3>Object-oriented simulation: bears, tourists, and berry fields</h3>
+            <p>Designed Python classes for a grid-based simulation using JSON input, turn-by-turn state changes, entity behavior, and formatted output. This shows OOP, decomposition, and state-management fundamentals.</p>
+            <ul>
+              <li>Classes: Bear, Tourist, BerryField</li>
+              <li>JSON parsing and simulation loops</li>
+              <li>Clear fit for backend logic and problem-solving roles</li>
+            </ul>
+          </article>
+
+          <article class="project-card" data-tags="data software">
+            <div class="card-top"><span class="project-type">Data Processing</span><span>Python</span></div>
+            <h3>Text, ratings, and restaurant data tools</h3>
+            <p>Completed Python work involving Yelp-style restaurant records, ratings, IMDB/text files, word data, dictionaries, lists, searching, sorting, and file I/O. Several assignments convert messy inputs into structured output and summaries.</p>
+            <ul>
+              <li>Data cleanup and file parsing</li>
+              <li>Text analysis, dictionaries, lists, and loops</li>
+              <li>Useful for analytics, operations, and product research internships</li>
+            </ul>
+          </article>
+
+          <article class="project-card" data-tags="hardware software">
+            <div class="card-top"><span class="project-type">VHDL / FPGA</span><span>Vivado</span></div>
+            <h3>Digital logic and FPGA labs</h3>
+            <p>Created VHDL modules and Vivado projects covering gates, a full adder, decoder logic, a clock divider, a four-bit counter, constraints, and seven-segment display output.</p>
+            <ul>
+              <li>Structural and behavioral VHDL design</li>
+              <li>Counter/display-driver integration</li>
+              <li>Evidence for hardware-curious startup and engineering roles</li>
+            </ul>
+          </article>
+
+          <article class="project-card" data-tags="software">
+            <div class="card-top"><span class="project-type">CI / Web</span><a href="https://github.com/jeremypangaribuan/github-actions-for-ci" target="_blank" rel="noreferrer">GitHub</a></div>
+            <h3>GitHub Actions continuous integration practice</h3>
+            <p>Worked with a JavaScript/HTML/CSS Tic Tac Toe sample project to learn GitHub Actions, source control, pull requests, and CI concepts used in modern software teams.</p>
+            <ul>
+              <li>Git, GitHub, and CI workflow awareness</li>
+              <li>JavaScript/HTML/CSS project structure</li>
+              <li>Good fit for Agile and DevSecOps-oriented internships</li>
+            </ul>
+          </article>
+
+          <article class="project-card" data-tags="content software">
+            <div class="card-top"><span class="project-type">Portfolio</span><a href="https://jeremypangaribuan.github.io/" target="_blank" rel="noreferrer">Live site</a></div>
+            <h3>GitHub Pages portfolio redesign</h3>
+            <p>Rebuilt a placeholder portfolio into a polished, responsive site that explains skills, projects, role fit, and contact information. This supports both engineering and growth/content internships.</p>
+            <ul>
+              <li>Static site with HTML, CSS, and JavaScript</li>
+              <li>Project storytelling and recruiter-friendly structure</li>
+              <li>Reusable for internship applications and networking</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="section section-alt">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">Skills snapshot</p>
+          <h2>Technical foundation with practical communication</h2>
+        </div>
+        <div class="skills-grid">
+          <div class="skill-card"><h3>Software</h3><p>Python, JavaScript fundamentals, HTML, CSS, Git/GitHub, GitHub Pages, GitHub Actions practice, JSON, file I/O, OOP, debugging.</p></div>
+          <div class="skill-card"><h3>AI & Data</h3><p>Prompt testing interest, AI tool evaluation, OCR experiments, PyMuPDF, PaddleOCR/EasyOCR exposure, OpenCV, NumPy, Jupyter Notebook, data cleanup.</p></div>
+          <div class="skill-card"><h3>Hardware</h3><p>VHDL, Vivado, logic gates, full adders, decoders, counters, clock dividers, seven-segment display drivers, constraint files.</p></div>
+          <div class="skill-card"><h3>Product & Communication</h3><p>Feature checklists, documentation, research summaries, user-facing explanations, content planning, technical storytelling, clear written communication.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="fit" class="section">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">Aligned internship tracks</p>
+          <h2>How my work maps to current opportunities</h2>
+        </div>
+        <div class="fit-grid">
+          <div class="fit-card"><h3>Software Engineering & AI</h3><p>Python/OOP, OCR experiments, GitHub, JavaScript basics, and digital logic projects align with full-stack, startup engineering, AI workflow, and product prototype roles.</p></div>
+          <div class="fit-card"><h3>Data, Product & Civic Tech</h3><p>Python parsing, JSON, ratings/text datasets, documentation, and research habits align with data support, product research, dashboards, and civic/government workflow internships.</p></div>
+          <div class="fit-card"><h3>Technical Writing & Developer Tools</h3><p>Project writeups, code explanation, GitHub familiarity, and interest in AI/security topics align with developer documentation and technical content roles.</p></div>
+          <div class="fit-card"><h3>Growth, Brand & Creator</h3><p>This portfolio demonstrates web presence, project storytelling, content structure, and technical enthusiasm that can support social, video, creator outreach, and startup brand roles.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section contact-section">
+      <div class="container contact-card">
+        <div>
+          <p class="eyebrow">Contact</p>
+          <h2>Let’s talk about internship opportunities.</h2>
+          <p>I am ready to learn, contribute, document clearly, and build useful things with a team.</p>
+        </div>
+        <div class="contact-actions">
+          <a class="button primary" href="mailto:zoomf7ash@gmail.com?subject=Jeremy%20Pangaribuan%20Internship%20Opportunity">zoomf7ash@gmail.com</a>
+          <a class="button secondary" href="tel:+12407290475">(240) 729-0475</a>
+          <a class="button secondary" href="https://github.com/jeremypangaribuan" target="_blank" rel="noreferrer">GitHub Profile</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-grid">
+      <p>© 2026 Jeremy Pangaribuan</p>
+      <p>Built for GitHub Pages with HTML, CSS, and JavaScript.</p>
+    </div>
+  </footer>
+  <script src="script.js"></script>
 </body>
 </html>
